@@ -1,6 +1,6 @@
 import "./App.css";
 import AudioPlayer from "./components/AudioPlayer";
-import InputSourceControl from "./components/InputSourceControl";
+import Controls from "./components/Controls";
 import React from "react";
 
 class App extends React.Component {
@@ -14,7 +14,7 @@ class App extends React.Component {
             Dictation App
           </h1>
         </header>
-        <InputSourceControl />
+        <Controls />
         <AudioPlayer />
       </div>
     );

@@ -2,6 +2,7 @@
   "extends": [
     "plugin:react/all"
   ],
+  "parser": "babel-eslint",
   "parserOptions": {
     "ecmaVersion": 9,
     "sourceType": "module",
@@ -18,7 +19,7 @@
     "array-bracket-newline": "error",
     "array-bracket-spacing": "error",
     "array-callback-return": "error",
-    "array-element-newline": "error",
+    "array-element-newline": "off",
     "arrow-body-style": "error",
     "arrow-parens": "error",
     "arrow-spacing": "error",
@@ -29,7 +30,7 @@
     "camelcase": "off",
     "capitalized-comments": "error",
     "class-methods-use-this": "off",
-    "comma-dangle": "error",
+    "comma-dangle": ["error", "always-multiline"],
     "comma-spacing": "error",
     "comma-style": "error",
     "complexity": "error",
@@ -305,8 +306,11 @@
     "react/jsx-filename-extension" : "off",
     "react/jsx-no-literals" : "off",
     "react/jsx-indent-props" : ["error", 2],
+    "react/jsx-first-prop-new-line" : ["error", "never"],
     "react/require-optimization" : "off",
     "react/prefer-stateless-function": "off",
+    "react/destructuring-assignment": "off",
+    "react/jsx-max-props-per-line": "off",
     "more-naming-conventions/snake-case-variables": "error"
 
   },
