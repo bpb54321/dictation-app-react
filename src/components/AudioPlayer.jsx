@@ -5,6 +5,7 @@ class AudioPlayer extends React.Component {
   constructor(props) {
 
     super();
+
     this.props = props;
 
   }
@@ -27,7 +28,6 @@ class AudioPlayer extends React.Component {
           type="url"
           value={default_source}
         />
-
         <audio
           controls
           id="audio-player"

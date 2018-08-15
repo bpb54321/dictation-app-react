@@ -1,6 +1,7 @@
-import './App.css';
-import AudioPlayer from './components/AudioPlayer';
-import React from 'react';
+import "./App.css";
+import AudioPlayer from "./components/AudioPlayer";
+import InputSourceControl from "./components/InputSourceControl";
+import React from "react";
 
 class App extends React.Component {
 
@@ -9,9 +10,12 @@ class App extends React.Component {
     return (
       <div className="dictation-app">
         <header className="header">
-          <h1 className="header__heading">Dictation App</h1>
+          <h1 className="header__heading">
+            Dictation App
+          </h1>
         </header>
-        <AudioPlayer/>
+        <InputSourceControl />
+        <AudioPlayer />
       </div>
     );
 
