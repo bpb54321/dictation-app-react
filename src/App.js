@@ -5,6 +5,16 @@ import React from "react";
 
 class App extends React.Component {
 
+  constructor(props) {
+
+    super(props);
+
+    this.state = {
+      "input_source": "video",
+    };
+
+  }
+
   render() {
 
     return (
@@ -14,7 +24,7 @@ class App extends React.Component {
             Dictation App
           </h1>
         </header>
-        <Controls />
+        <Controls inputSource={this.state.input_source} />
         <AudioPlayer />
       </div>
     );

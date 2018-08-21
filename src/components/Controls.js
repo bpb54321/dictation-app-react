@@ -8,7 +8,7 @@ class Controls extends React.Component {
 
     return (
       <div>
-        <InputSourceControl />
+        <InputSourceControl inputSource={this.props.inputSource} />
         <PlaybackControls />
       </div>
     );

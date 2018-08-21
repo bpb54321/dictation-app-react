@@ -12,6 +12,10 @@ class LabelledInput extends React.Component {
 
   render() {
 
+    let name = "Laura";
+
+    let pet = "Zippy";
+
     return (
       <div>
         <label htmlFor={this.props.name}>

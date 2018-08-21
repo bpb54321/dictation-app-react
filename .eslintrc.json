@@ -98,7 +98,7 @@
     "no-compare-neg-zero": "error",
     "no-cond-assign": "error",
     "no-confusing-arrow": "error",
-    "no-console": "error",
+    "no-console": "off",
     "no-const-assign": "error",
     "no-constant-condition": "error",
     "no-continue": "error",
@@ -135,7 +135,7 @@
     "no-inline-comments": "error",
     "no-inner-declarations": "error",
     "no-invalid-regexp": "error",
-    "no-invalid-this": "error",
+    "no-invalid-this": "off",
     "no-irregular-whitespace": "error",
     "no-iterator": "error",
     "no-label-var": "error",
@@ -311,6 +311,7 @@
     "react/prefer-stateless-function": "off",
     "react/destructuring-assignment": "off",
     "react/jsx-max-props-per-line": "off",
+    "react/no-set-state": "off",
     "more-naming-conventions/snake-case-variables": "error"
 
   },
