@@ -27,7 +27,7 @@
     "block-spacing": "error",
     "brace-style": "error",
     "callback-return": "error",
-    "camelcase": "off",
+    "camelcase": "error",
     "capitalized-comments": "error",
     "class-methods-use-this": "off",
     "comma-dangle": ["error", "always-multiline"],
@@ -312,7 +312,7 @@
     "react/destructuring-assignment": "off",
     "react/jsx-max-props-per-line": "off",
     "react/no-set-state": "off",
-    "more-naming-conventions/snake-case-variables": "error"
+    "more-naming-conventions/snake-case-variables": "off"
 
   },
   "env": {

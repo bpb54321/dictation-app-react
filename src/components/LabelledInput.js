@@ -7,7 +7,10 @@ class LabelledInput extends React.Component {
     "label": PropTypes.string.isRequired,
     "name": PropTypes.string.isRequired,
     "type": PropTypes.oneOf(["number", "text", "url", "date"]).isRequired,
-    "value": PropTypes.string.isRequired,
+    "value": PropTypes.oneOfType([
+      PropTypes.string,
+      PropTypes.number,
+    ]).isRequired,
   };
 
   render() {
