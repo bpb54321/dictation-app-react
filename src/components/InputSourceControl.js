@@ -1,3 +1,4 @@
+import LabelledInput from "./LabelledInput";
 import PropTypes from "prop-types";
 import React from "react";
 
@@ -15,6 +16,8 @@ class InputSourceControl extends React.Component {
 
     this.state = {
       "inputSource": props.inputSource,
+      "sourceUrl": "https://papp.csps-efpc.gc.ca/courses/dept/CSPS/" +
+        "C285/content/section03/audio/bc01.mp3",
     };
 
   }
@@ -34,7 +37,7 @@ class InputSourceControl extends React.Component {
     return (
       <fieldset>
         <legend>
-          Select a input source
+         Input source
         </legend>
         <div>
           <label htmlFor="video">
@@ -54,6 +57,9 @@ class InputSourceControl extends React.Component {
             value="audio"
           />
         </div>
+        <LabelledInput label="Source URL" name="source-url" type="text"
+          value={this.state.sourceUrl}
+        />
       </fieldset>
     );
 

@@ -13,6 +13,26 @@ class LabelledInput extends React.Component {
     ]).isRequired,
   };
 
+  constructor(props) {
+
+    super(props);
+
+    this.props = props;
+
+    this.state = {
+      "value": this.props.value,
+    };
+
+  }
+
+  handleChange = (event) => {
+
+    this.setState({
+      "value": event.target.value,
+    });
+
+  }
+
   render() {
 
     return (
@@ -21,8 +41,9 @@ class LabelledInput extends React.Component {
           {this.props.label}
         </label>
         <input id={this.props.name} name={this.props.name}
+          onChange={this.handleChange}
           type={this.props.type}
-          value={this.props.value}
+          value={this.state.value}
         />
       </div>
     );

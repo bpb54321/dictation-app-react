@@ -18,24 +18,6 @@ class PlaybackControls extends React.Component {
 
   }
 
-  handleChange = (stateKey, value) => {
-
-    console.log(`New value: ${value}`);
-
-    const newState = {};
-
-    newState[stateKey] = value;
-
-    this.setState(newState);
-
-  }
-
-  handleChangeEndTime = (event) => {
-
-    this.handleChange("endTime", event.target.value);
-
-  }
-
   render() {
 
     return (
@@ -46,17 +28,10 @@ class PlaybackControls extends React.Component {
         <LabelledInput label="Start Time" name="start-time" type="number"
           value={this.state.startTime}
         />
-        <label htmlFor="end-time">
-          End Time
-        </label>
-        <input id="end-time" name="end-time"
-          onChange={this.handleChangeEndTime} type="number"
+        <LabelledInput label="End Time" name="end-time" type="number"
           value={this.state.endTime}
         />
-        <label htmlFor="pause-time">
-          Pause Time
-        </label>
-        <input id="pause-time" name="pause-time" type="number"
+        <LabelledInput label="Pause Time" name="pause-time" type="number"
           value={this.state.pauseTime}
         />
         <button id="loop-button" type="button">
